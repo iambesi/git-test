@@ -74,8 +74,13 @@ print("\noutput:")
 #print("\noutput: " + str(op))
 #print(op)
 op = str(op)
-for line in op.split('\n'):
-    print(line)
+#op2 = op.split(',')
+op = op.replace("\\r\\n", "\n")
+#for line in op.split('\n'):
+for line in op.split(','):
+    if ( line.startswith(" stdout") ):
+        print(line[10:-2])
+    #print(line)
 
 # Test hash
 dict = {
@@ -90,3 +95,4 @@ print("Name: " + dict["first"] + " " + dict["last"])
 print("Employee ID: " + str(dict["id"]))
 print("Title: " + dict["title"])
 print("")
+print("Done\n")
