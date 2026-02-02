@@ -23,7 +23,12 @@ print("\nReading from file...\n")
 line = None
 
 try:
-    fil = open("py.txt", "r")
+    #fil = open("py.txt", "r")
+
+     # Fix for UTF-8
+     # source: https://stackoverflow.com/questions/491921/unicode-utf-8-reading-and-writing-to-files-in-python
+
+    fil = open("py.txt", mode="r", encoding="utf-8")
     line = fil.readline()
     
     while (line != ""):
