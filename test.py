@@ -41,6 +41,8 @@ finally:
     fil.close()
 
 # Test array.
+print("\nTesting arrays...")
+
 a = np.array(["hi", "hola", "hej"])
 #a[0] = "hi"
 #a[1] = "hola"
