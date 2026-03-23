@@ -41,6 +41,8 @@ if ( args.message ):
 else:
    print("No message was entered.")
 
+# file reading.
+
 if args.filename:
    print("\nAttempting to read from file '" + args.filename + "'...\n")
 
@@ -60,6 +62,8 @@ if args.filename:
       if fil: fil.close()
 else:
    print("Error: no file name was specified!")
+
+# arrays.
 
 print("\nTesting arrays...\n")
 
