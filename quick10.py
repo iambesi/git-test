@@ -29,6 +29,8 @@ print("OS version: " + osver)
 
 print("")
 
+# arguments.
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--filename")
 parser.add_argument("-m", "--message")
